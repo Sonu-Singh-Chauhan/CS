@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>intex</title>
+    <style>
+     div{ width: 40%;
+     height: 300px;
+     background-color: blueviolet;
+     background-image: linear-gradient(40deg, red, blue);
+     margin: auto;
+     position: relative;}
+     #box2{ width: 20%;
+     height: 100px;
+     background-color: blueviolet;
+     background-image: linear-gradient(40deg, rgb(0, 162, 255), rgb(251, 255, 0));
+     margin: auto;
+     position: absolute;
+     top: 30%; left: 40%;
+     animation-name: box1;
+     animation-duration: 10s;}
+     
+     @keyframes box1{
+        0% { border-top: 5px solid red;}
+         25% { border-top: 5px solid red; border-right: 5px solid rgb(0, 255, 0);}
+         50% { border-top: 5px solid red; border-right: 5px solid rgb(0, 255, 0);
+          border-bottom: 5px solid rgb(47, 0, 255);}
+         75% {border-top: 5px solid red; border-right: 5px solid rgb(0, 255, 0);
+          border-bottom: 5px solid rgb(47, 0, 255); border-left: 5px solid rgb(255, 0, 179);}
+         100% { border: none;}
+     }
+
+    </style>
+</head>
+<body>
+    <div>
+        <div id="box2"></div>
+    </div>
+</body>
+</html>
